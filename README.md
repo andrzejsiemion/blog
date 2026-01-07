@@ -1,2 +1,2 @@
-# blog
-Blog content for siemion.pro
+# siemion.pro
+Blog content
