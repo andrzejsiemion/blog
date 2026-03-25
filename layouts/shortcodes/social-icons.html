@@ -1,0 +1,7 @@
+<div class="social-icons">
+{{- range site.Params.socialIcons }}
+    <a href="{{ .url | absURL }}" target="_blank" rel="noopener noreferrer me" title="{{ .name | title }}">
+        {{- partial "svg.html" . }}
+    </a>
+{{- end }}
+</div>
