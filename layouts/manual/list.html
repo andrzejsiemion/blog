@@ -1,0 +1,27 @@
+{{- define "main" }}
+
+<div class="manual-layout">
+  <aside class="manual-nav">
+    <h3 class="manual-nav-title">User Manual</h3>
+    <ul>
+      <li class="manual-nav-active"><a href="{{ .RelPermalink }}">Overview</a></li>
+      {{- range .Pages.ByWeight }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{- end }}
+    </ul>
+    <a href="/scandio/" class="manual-nav-back">&larr; Back to Scandio</a>
+  </aside>
+
+  <article class="manual-content post-single">
+    <header class="post-header">
+      <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+  </article>
+</div>
+
+{{- partial "manual_styles.html" . }}
+
+{{- end }}
