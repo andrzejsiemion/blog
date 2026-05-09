@@ -25,11 +25,25 @@
       {{ .Content }}
     </div>
 
+    {{- $pages := .Parent.Pages.ByWeight -}}
+    {{- $prev := "" -}}
+    {{- $next := "" -}}
+    {{- $found := false -}}
+    {{- range $pages -}}
+      {{- if $found -}}
+        {{- if eq $next "" -}}{{- $next = . -}}{{- end -}}
+      {{- else if eq .RelPermalink $current.RelPermalink -}}
+        {{- $found = true -}}
+      {{- else -}}
+        {{- $prev = . -}}
+      {{- end -}}
+    {{- end }}
+
     <nav class="manual-pager">
-      {{- with .PrevInSection }}
+      {{- with $prev }}
       <a class="manual-pager-prev" href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
       {{- end }}
-      {{- with .NextInSection }}
+      {{- with $next }}
       <a class="manual-pager-next" href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
       {{- end }}
     </nav>
