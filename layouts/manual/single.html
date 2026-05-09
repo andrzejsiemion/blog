@@ -1,0 +1,41 @@
+{{- define "main" }}
+
+{{- $current := . -}}
+
+<div class="manual-layout">
+  <aside class="manual-nav">
+    <h3 class="manual-nav-title">User Manual</h3>
+    <ul>
+      <li><a href="{{ .Parent.RelPermalink }}">Overview</a></li>
+      {{- range .Parent.Pages.ByWeight }}
+      <li{{ if eq . $current }} class="manual-nav-active"{{ end }}>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </li>
+      {{- end }}
+    </ul>
+    <a href="/scandio/" class="manual-nav-back">&larr; Back to Scandio</a>
+  </aside>
+
+  <article class="manual-content post-single">
+    <header class="post-header">
+      <a href="{{ .Parent.RelPermalink }}" class="manual-breadcrumb">User Manual</a>
+      <h1 class="post-title">{{ .Title }}</h1>
+    </header>
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+
+    <nav class="manual-pager">
+      {{- with .PrevInSection }}
+      <a class="manual-pager-prev" href="{{ .RelPermalink }}">&larr; {{ .Title }}</a>
+      {{- end }}
+      {{- with .NextInSection }}
+      <a class="manual-pager-next" href="{{ .RelPermalink }}">{{ .Title }} &rarr;</a>
+      {{- end }}
+    </nav>
+  </article>
+</div>
+
+{{- partial "manual_styles.html" . }}
+
+{{- end }}

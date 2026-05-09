@@ -18,6 +18,10 @@ The app is built around the idea that this kind of data has no business leaving 
 - Sorts and filters cards, marks favourites, and surfaces the ones you use most in a Quick Access carousel.
 - Exports and imports a `.scandiobackup` file so you can move cards between devices or keep your own copy.
 
+## How to use it
+
+The [user manual](/scandio/manual/) walks through adding cards, scanning barcodes, the Quick Access carousel, search and sort, backup/restore, and every Settings option, with annotated screenshots for each step.
+
 ## Privacy
 
 Scandio collects nothing, transmits nothing, and contains no analytics, advertising identifiers, or third-party SDKs. The full [privacy policy](/scandio/privacy/) covers what the app stores locally, how camera and photo-library access is used, and how the optional Apple Intelligence category suggestion works.
