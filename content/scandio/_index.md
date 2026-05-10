@@ -3,6 +3,7 @@ title: "Scandio"
 date: 2026-05-09
 draft: false
 showtoc: false
+ShowRssButtonInSectionTermList: false
 ---
 
 Scandio is a loyalty-card manager for iPhone. Add a card by scanning its barcode, give it a name and a colour, and the next time you're at the checkout you pull it up in two taps and let the cashier scan it off the screen.

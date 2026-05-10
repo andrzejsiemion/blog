@@ -23,4 +23,14 @@ projects:
       - SwiftUI
       - SwiftData
       - Open Source
+  - name: "pi-router"
+    url: "/pi-router/"
+    github: "https://github.com/andrzejsiemion/pi-router"
+    description: "Ansible automation for a Raspberry Pi 5 that shares LTE internet over Ethernet, monitors a UPS HAT with auto-shutdown and auto-boot, and provides remote SSH access via Twingate. Speedtest results and battery events are reported to Slack."
+    tags:
+      - Ansible
+      - Raspberry Pi
+      - Linux
+      - Networking
+      - Open Source
 ---
