@@ -1,6 +1,5 @@
 .footer {
     position: relative;
-    max-width: calc(var(--nav-width) + var(--gap) * 2);
 }
 
 .footer-coffee {
