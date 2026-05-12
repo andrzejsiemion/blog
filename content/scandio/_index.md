@@ -10,6 +10,12 @@ Scandio is a loyalty-card manager for iPhone. Add a card by scanning its barcode
 
 The app is built around the idea that this kind of data has no business leaving your phone. There is no account, no sign-in, and no cloud. Everything you add stays in the app's private container on your device.
 
+<figure class="app-hero">
+    <img src="/scandio/manual/06-home-grid.png" alt="Scandio home screen with the Quick Access carousel and card grid" loading="lazy">
+</figure>
+
+{{< appstore-button url="https://apps.apple.com/app/scandio/id6767295504" >}}
+
 ## What it does
 
 - Stores loyalty cards with a name, barcode, tile colour, optional store logo, and a category icon.

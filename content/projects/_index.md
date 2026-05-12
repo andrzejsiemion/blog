@@ -16,6 +16,7 @@ projects:
   - name: "Scandio"
     url: "/scandio/"
     github: "https://github.com/andrzejsiemion/scandio-ios"
+    appstore: "https://apps.apple.com/app/scandio/id6767295504"
     description: "Keep all your loyalty cards in one place on your iPhone. Scan a barcode, name the card, pull it up at the checkout — that's it. Everything stays on your device, with no account, no tracking, and no cloud."
     tags:
       - iOS
